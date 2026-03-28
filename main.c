@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "word_freq.h"  // Include our custom header
+#include "word_freq.h"  
 
 #define FILENAME "text.txt"
 
-// We need to access these from word_freq.c
+
 extern Word words[MAX_WORDS];
 extern int uniqueWordCount;
 
@@ -36,7 +36,7 @@ int main() {
         printf("\n");
     }
 
-    // Interactive Search
+    
     char search[MAX_LENGTH];
     while (1) {
         printf("\nSearch word (or 'exit'): ");
